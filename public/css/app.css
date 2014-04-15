@@ -1,0 +1,13 @@
+.contacts-list--heading {
+	text-align: center;
+	color: #ccc;
+	margin: 10px 0;
+}
+
+.contacts-list--heading a {
+	color: #aaa;
+}
+
+.panel-title a {
+	color: white;
+}

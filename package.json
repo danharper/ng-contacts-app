@@ -1,0 +1,46 @@
+{
+  "name": "DemoContacts",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "brfs": "~1.0.1"
+  },
+  "devDependencies": {
+    "napa": "~0.4.1",
+    "protractor": "~0.20.1",
+    "gulp": "~3.6.0",
+    "gulp-karma": "0.0.3",
+    "gulp-protractor": "0.0.7",
+    "gulp-livereload": "~1.2.0",
+    "vinyl-source-stream": "~0.1.1",
+    "watchify": "~0.6.4",
+    "karma": "~0.12.0",
+    "karma-jasmine": "~0.1.5",
+    "karma-browserify": "0.0.6",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-phantomjs-launcher": "~0.1.2",
+    "gulp-ngmin": "~0.2.0",
+    "es6ify": "1.1.0",
+    "traceur": "0.0.32",
+    "karma-traceur-preprocessor": "^0.2.2"
+  },
+  "scripts": {
+    "install": "napa",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "napa": {
+    "angular": "angular/bower-angular#v1.2.16",
+    "angular-animate": "angular/bower-angular-animate#v1.2.16",
+    "ui-router": "angular-ui/ui-router#0.2.10",
+    "angular-mocks": "angular/bower-angular-mocks"
+  },
+  "browserify": {
+    "transform": [
+      "es6ify",
+      "brfs"
+    ]
+  },
+  "author": "",
+  "license": "Private"
+}

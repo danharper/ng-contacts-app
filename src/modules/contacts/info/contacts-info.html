@@ -1,0 +1,17 @@
+<div class="nav nav-pills">
+	<li ng-class="{active:$state.is('contacts.show')}">
+		<a ui-sref="contacts.show({id:contact.id})">Info</a>
+	</li>
+	<li ng-class="{active:$state.is('contacts.show.another')}">
+		<a ui-sref="contacts.show.another({id:contact.id})">Another</a>
+	</li>
+	<li class="pull-right" ng-class="{active:$state.is('contacts.edit')}">
+		<a ui-sref="contacts.edit({id:contact.id})">Edit</a>
+	</li>
+</div>
+
+<div ui-view>
+	<p>
+		Hey there; I'm <b>{{ contact.name }}</b> from {{ contact.city }}!
+	</p>
+</div>

@@ -1,0 +1,22 @@
+<div class="col-md-3">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				Contacts <a ui-sref="contacts.create" class="btn btn-xs btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span> Add New</a>
+			</h3>
+		</div>
+		<div class="list-group">
+			<a ng-repeat="contact in contacts" ui-sref="contacts.show({id:contact.id})" ng-class="{active:$state.includes('contacts.show', {id:''+contact.id})}" class="list-group-item">
+				{{ contact.name }}
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-9">
+	<div class="panel panel-default">
+		<div class="panel-body" ui-view>
+			<h3 class="contacts-list--heading">Select a Contact, or <a ui-sref="contacts.create">Add One</a>.</h3>
+		</div>
+	</div>
+</div>
