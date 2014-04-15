@@ -10,6 +10,12 @@ A small "for-fun" [**AngularJS**](http://angularjs.org/) app, written with a bun
 * Using [**napa**](https://github.com/shama/napa) to load front-end assets with npm (eg. Angular)
 * [**Gulp**](http://gulpjs.com/) is used as the task runner to tie everything together
 
+![http://i.imgur.com/u4Ol8wn.png](http://i.imgur.com/u4Ol8wn.png)
+
+![http://i.imgur.com/0l7VTYK.png](http://i.imgur.com/0l7VTYK.png)
+
+![http://i.imgur.com/qQrUSU4.png](http://i.imgur.com/qQrUSU4.png)
+
 ### Thought Process
 
 `index.js` boots up the application by pulling in the core dependencies, modules, components, then application itself.
