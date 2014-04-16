@@ -1,6 +1,6 @@
 var module = angular.mock.module
 
-ddescribe('TopNavController', function() {
+describe('TopNavController', function() {
 	beforeEach(module('cmp.topNav'))
 
 	var $scope, makeController = inject(function($controller) {
